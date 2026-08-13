@@ -16,7 +16,7 @@ class GroupQueryAttention(nn.Module):
 
         #now dot linear trasnformation X.WQ
     def forward(self , x):
-        Batch, seq_lenght, di`m = x.shape
+        Batch, seq_lenght, dim = x.shape
         Q = self.WQ(x)
         K = self.WK(x)
         V = self.WV(x)
